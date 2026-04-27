@@ -22,3 +22,6 @@ plots/
 data/gharchive/
 data/_checkpoints/
 .venv/
+node_modules/
+dist/
+drizzle/

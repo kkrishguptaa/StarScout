@@ -1,0 +1,27 @@
+{
+  "name": "starscout",
+  "version": "1.0.0",
+  "description": "This repository contains the source code of StarScout, a tool to find suspicious (and possibly faked) GitHub stars at-scale. It also contains data and scripts to replicate results from the following paper:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.15.3",
+    "drizzle-kit": "^0.31.0",
+    "typescript": "^5.8.3"
+  }
+}
