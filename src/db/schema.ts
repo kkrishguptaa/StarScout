@@ -4,7 +4,7 @@ import { relations } from 'drizzle-orm'
 export const tokens = sqliteTable('tokens', {
   userId: text('user_id').primaryKey().notNull(),
   username: text('username').notNull().unique(),
-  token: text('github_token').notNull().unique(),
+  githubToken: text('github_token').notNull().unique(),
 
   lastTokenUseAt: int('last_token_use_at', { mode: 'timestamp' }).notNull(),
 })
